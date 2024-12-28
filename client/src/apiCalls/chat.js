@@ -1,10 +1,8 @@
-import { axiosInstance } from './index';
-
-const url = 'https://quick-chat-server-8t9c.onrender.com';
+import { axiosInstance, url } from './index';
 
 export const getAllChats = async () => {
     try{
-        const response = await axiosInstance.get(url + 'api/chat/get-all-chats');
+        const response = await axiosInstance.get('api/chat/get-all-chats');
         return response.data;
     }catch(error){
         return error;

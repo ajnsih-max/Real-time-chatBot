@@ -1,6 +1,4 @@
-import { axiosInstance } from './index';
-
-const url = 'https://quick-chat-server-8t9c.onrender.com';
+import { axiosInstance, url } from './index';
 
 export const createNewMessage = async ( message ) => {
     try{

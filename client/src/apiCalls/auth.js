@@ -1,6 +1,4 @@
-import { axiosInstance } from './index';
-
-const url = 'https://quick-chat-server-8t9c.onrender.com';
+import { axiosInstance, url } from './index';
 
 export const signupUser = async (user) => {
     try{
@@ -13,7 +11,7 @@ export const signupUser = async (user) => {
 
 export const loginUser = async (user) => {
     try{
-        const response = await axiosInstance.post(url +'/api/auth/login', user);
+        const response = await axiosInstance.post(url + '/api/auth/login', user);
         return response.data;
     }catch(error){
         return error;
